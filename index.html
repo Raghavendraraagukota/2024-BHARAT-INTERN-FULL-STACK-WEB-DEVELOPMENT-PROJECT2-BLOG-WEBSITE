@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Blogs</title>
+</head>
+<body>
+    <div id="bg-overlay"></div>
+    <div id="content-wrapper">
+        <header>
+            <h1 id="blog-title">BLOGS</h1>
+            <div class="blog-options">
+                <div class="write-blog-option">
+                    <a href="#" id="write-blog-btn">Write Blog</a>
+                </div>
+                <div class="read-blog-option">
+                    <a href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwj6wK3y59iEAxVy3hYFHQ8UDU0YABAAGgJ0bA&ase=2&gclid=EAIaIQobChMI-sCt8ufYhAMVct4WBR0PFA1NEAAYAiAAEgKXg_D_BwE&ohost=www.google.com&cid=CAASJeRooHAzWIOQPwPAyNwar2OdsLOrzzYBc2MVqEv4sDLxkOcG9ds&sig=AOD64_1npOVDdV8ptBBAHjVBbicJTQkNcw&q&nis=4&adurl&ved=2ahUKEwiZ9Kjy59iEAxUXavUHHeYFA3oQ0Qx6BAgCEAM" id="read-blog-btn">View Blogs</a>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <!-- Latest Blogs Section -->
+            <section id="latest-blogs"></section>
+        </main>
+    </div>
+
+    <div id="write-blog-form">
+        <h2>Write a Blog</h2>
+        <form id="blog-form" action="/post" method="POST">
+            <div class="input-group">
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" required>
+            </div>
+
+            <div class="input-group">
+                <label for="content">Content:</label>
+                <textarea id="content" name="content" required></textarea>
+            </div>
+
+            <button type="button" id="publish-btn">Publish</button>
+        </form>
+        <div id="success-message"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
